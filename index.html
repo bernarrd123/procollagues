@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collageus</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <style>
+.swiper {
+        width: 65%;
+        height: 30%;
+      }
+    </style>
+
+
+    
+
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src= "gambar1.jpeg" width="100%" height="100%"></div>
+      <div class="swiper-slide"><img src= "gambar2.jpeg" width="100%" height="100%"></div>
+      <div class="swiper-slide"><img src= "gambar3.jpeg" width="100%" height="100%"></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <!-- <div class="swiper-scrollbar"></div> -->
+  </div>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+// Optional parameters
+direction: 'horizontal',
+loop: true,
+
+// If we need pagination
+pagination: {
+el: '.swiper-pagination',
+},
+
+// Navigation arrows
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+
+// And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
+});
+</script>
+
+
+
+    <!-- header
+    <div>
+    </div> -->
+
+    <!-- content -->
+    <div>
+        <h1></h1>
+        <ul class="gambarb2">
+            <li>
+                <img class="gambar2" src="gambar2.jpeg" alt="">
+            </li>
+            <li>
+                <img class="gambar3" src="gambar3.jpeg" alt="">
+            </li>
+        </ul>
+    </div>
+
+ 
+   
+</body>
+</html>
