@@ -9,34 +9,43 @@
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<style>
+    .swiper {
+            width: 65%;
+            height: 30%;
+          }
+        </style>
 </head>
+
 <body>
-    <style>
-.swiper {
-        width: 65%;
-        height: 30%;
-      }
-    </style>
+    <div class="container">
 
 
-    
+<div id="a" class="header">
+    <ul id="a"class=contentheader>
+        <img class="menuicon" src="ikon.jpeg" alt="">
+    </ul>
+</div class= content>
 
+ <br>
     <!-- Slider main container -->
-<div class="swiper">
+ <div class="swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide"><img src= "gambar1.jpeg" width="100%" height="100%"></div>
-      <div class="swiper-slide"><img src= "gambar2.jpeg" width="100%" height="100%"></div>
-      <div class="swiper-slide"><img src= "gambar3.jpeg" width="100%" height="100%"></div>
+      <div class="swiper-slide"><img class="dot" src= "gambar1.jpeg" width="100%" height="100%"></div>
+      <div class="swiper-slide"><img class="dot" src= "gambar2.jpeg" width="100%" height="100%"></div>
+      <div class="swiper-slide"><img class="dot" src= "gambar3.jpeg" width="100%" height="100%"></div>
+    
       ...
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
   
     <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
+
+    <div class="swiper-button-prev"></div>
   
     <!-- If we need scrollbar -->
     <!-- <div class="swiper-scrollbar"></div> -->
@@ -44,27 +53,27 @@
 
   <script>
     const swiper = new Swiper('.swiper', {
-// Optional parameters
-direction: 'horizontal',
-loop: true,
+ // Optional parameters
+ direction: 'horizontal',
+ loop :true,
 
-// If we need pagination
-pagination: {
+ // If we need pagination
+  pagination: {
 el: '.swiper-pagination',
-},
+ },
 
-// Navigation arrows
-navigation: {
-nextEl: '.swiper-button-prev',
-prevEl: '.swiper-button-next',
-},
+ // Navigation arrows
+  navigation: {
+ nextEl: '.swiper-button-prev',
+ prevEl: '.swiper-button-next',
+ },
 
 // And if we need scrollbar
 //   scrollbar: {
 //     el: '.swiper-scrollbar',
 //   },
 });
-</script>
+ </script>
 
 
 
@@ -85,7 +94,13 @@ prevEl: '.swiper-button-next',
         </ul>
     </div>
 
- 
+    <!-- footer -->
+    <div>
+    
+
+    </div>
+
+</div>
    
 </body>
 </html>
